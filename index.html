@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo da velha</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="image/favicon.png" type="image/x-icon">
+</head>
+<body>
+    <div id="container1">
+            <div id="opcoes">
+                <select id="selecaoJogo" title="Selecione uma das opcões">
+                    <option value="1">Jogar com Computador</option>
+                    <option value="2">Jogar com Amigo</option>
+                </select>
+            </div>
+        <div id="jogo">
+            <div class="jogador active" id="j1">
+                <img src="image/X.png">
+                <div class="pontuacao" id="px"></div>
+            </div>
+            <div class="jogador" id="j2">
+                <img src="image/circle.png">
+                <div class="pontuacao" id="po"></div>
+            </div>
+        </div>
+    </div>
+    <div id="VezDe">
+        <p>Vez de <img src="image/X.png" id="Alternado"></p>
+    </div>
+    <div id="tabuleiro">
+        <div id="c00" class="spaces" onclick="jogar(this.id)"><img id="ci00"></div>
+        <div id="c01" class="spaces" onclick="jogar(this.id)"><img id="ci01"></div>
+        <div id="c02" class="spaces" onclick="jogar(this.id)"><img id="ci02"></div>
+        <div id="c10" class="spaces" onclick="jogar(this.id)"><img id="ci10"></div>
+        <div id="c11" class="spaces" onclick="jogar(this.id)"><img id="ci11"></div>
+        <div id="c12" class="spaces" onclick="jogar(this.id)"><img id="ci12"></div>
+        <div id="c20" class="spaces" onclick="jogar(this.id)"><img id="ci20"></div>
+        <div id="c21" class="spaces" onclick="jogar(this.id)"><img id="ci21"></div>
+        <div id="c22" class="spaces" onclick="jogar(this.id)"><img id="ci22"></div>
+    </div>
+    <div id="reiniciar"><button onclick="limparJogo()">Segundo tempo</button></div>
+    <div id="overlay" class="overlay-vencedor">
+        <div id="mensagemVencedor" class="mensagem-vencedor"></div>
+    </div>
+</body>
+<script src="js/main.js"></script>
+</html>

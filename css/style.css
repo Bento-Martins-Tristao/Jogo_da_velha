@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sen&display=swap');
+
+* {
+    margin: 0;
+    font-family: 'Poppins', serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 90vh;
+    background-image: url(../image/wallpaper.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#container1 {
+    width: calc(100% - 100px);
+    height: 55px;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    margin-left: 100px;
+}
+
+#opcoes{
+    width: 29%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+}
+
+#reiniciar button {
+    margin-top: 20px;
+    border: 3px goldenrod solid;
+    border-radius: 5px;
+    color: goldenrod;
+}
+
+.jogador{
+    width: 33%;
+    height: 25px;
+    margin: 20px 0;
+    border: 3px solid goldenrod;
+    background-color: white;
+    border-radius: 15px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+.jogador .pontuacao{
+    width: 30px;
+}
+.jogador img{
+    width: 20px;
+    height: 20px;
+}
+.active {
+    box-shadow: 0px 5px 0px goldenrod;
+}
+
+#jogo{
+    width: 400px;
+    display: flex;
+    justify-content: space-around;
+}
+
+#tabuleiro {
+    width: 400px;
+    height: 400px;
+    border: 3px solid goldenrod;
+    border-collapse: collapse;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.616);
+}
+
+.overlay-vencedor {
+    position: fixed; 
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: none; 
+    justify-content: center;
+    align-items: center;
+    z-index: 1000; 
+}
+
+.mensagem-vencedor {
+    color: white;
+    font-size: 2em;
+    font-weight: bold;
+    text-align: center;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+}
+
+.spaces{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid goldenrod;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+}
+
+#c1{
+    grid-column: 1;
+    grid-row: 1;
+} #c2{
+    grid-column: 2;
+    grid-row: 1;
+} #c3{    
+    grid-column: 3;
+    grid-row: 1;
+} #c4{
+    grid-column: 1;
+    grid-row: 2;
+} #c5{
+    grid-column: 2;
+    grid-row: 2;
+} #c6{
+    grid-column: 3;
+    grid-row: 2;
+} #c7{
+    grid-column: 1;
+    grid-row: 3;
+} #c8{
+    grid-column: 2;
+    grid-row: 3;
+} #c9{
+    grid-column: 3;
+    grid-row: 3;
+}
+
+#VezDe {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 900;
+    color: rgb(255, 255, 255);
+    background-color:goldenrod;
+    width: 406px;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+#Alternado {
+    width: 20px;
+    height: 20px;
+}
+
+#selecaoJogo{
+    width: 200px;
+    border-radius: 10px;
+    padding: 10px 0;
+    border: 3px solid goldenrod;
+    background-color: white;
+    color: goldenrod;
+}
+
+.vencedor {
+    background-color: red;
+
+}
